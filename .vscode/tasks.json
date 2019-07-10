@@ -7,6 +7,14 @@
             "label": "build docker img",
             "type": "shell",
             "command": "docker build . -t burgercoin:latest"
+        },
+        {
+            "label": "test",
+            "type": "shell",
+            "command": "go test",
+            "options": {
+                "cwd": "${workspaceRoot}/src/test"
+            }
         }
     ]
 }
